@@ -1,30 +1,46 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 	<title>Brandon Van Heyde's Portfolio</title>
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
 
 	<!-- Navbar and portfolio page links-->
 
-	<nav>
-	
-		<ul>
-			<li class="nav-items">Brandon Van Heyde</li>
-			<li class="page-links">About</li>
-			<li class="page-links">Portfolio</li>
-			<li class="page-links">Contact</li>
+		<ul id="navbar">
+
+			<li class="nav-items" id="your-name">Brandon Van Heyde</li>
+
+			<li class="nav-items page-links" id="link3">
+				<a href="contact.html">Contact</a>
+			</li>
+
+			<li class="nav-items page-links" id="link2">
+				<a href="portfolio.html">Portfolio</a>
+			</li>
+
+			<li class="nav-items page-links" id="link1">
+				<a href="index.html">About</a>
+			</li>
+
 		</ul>
-	
-	</nav>
 
 	<!--About me page main body contents-->
 
-	<div id="container">
+<div class="wrapper">
+
+	<div class="container" id="body">
 
 		<h2>About Brandon</h2>
 
-		<img src="assets/images/bvhheadshot.png" alt="Brandon Van Heyde's face">
+		<img src="assets/images/bvhheadshot.png" alt="Brandon Van Heyde's face" id="brandon-profile-pic">
 
 		<p class="about-me-text">Brandon is a financial services professional with 9+ years of experience serving in various corporate strategy, business deelopment, and finance roles while working at firms such as General Motors, EY, JP Morgan and, currently, Price Waterhouse Coopers. Brandon works in the wildly fascinated world of payments (credit/debit/prepaid cards, wire payments, blockchain) and financial technology. </p>
 
@@ -36,18 +52,38 @@
 	<!-- Aside with social media links to Brandon's social sites -->
 
 	<aside>
-		<h2>Connect with Me</h2>
-		<a href="https://github.com/branvh"><img src="assets/images/githublogo.png" alt="github link icon" class="social-icons"></a>
-		<a href="https://www.linkedin.com/in/brandonvanheyde"><img src="assets/images/linkedinlogo.png" alt="linked link icon" class="social-icons"></a>
-		<a href="http://stackoverflow.com/users/6789229/brandon-vh"><img src="assets/images/stackoverflowlogo.png" alt="stack-overflow link icon" class="social-icons"></a>
+		<div class="container" id="connect-aside">
+			<h3>Connect with Me</h3>
+
+			<a href="https://github.com/branvh" target="_blank">
+				<img src="assets/images/githublogo.png" alt="github link icon" class="social-icons">
+			</a>
+
+			<a href="https://www.linkedin.com/in/brandonvanheyde" target="_blank">
+				<img src="assets/images/linkedinlogo.png" alt="linked link icon" class="social-icons">
+			</a>
+
+			<a href="http://stackoverflow.com/users/6789229/brandon-vh" target="_blank">
+				<img src="assets/images/stackoverflowlogo.png" alt="stack-overflow link icon" class="social-icons">
+			</a>
+
+		</div>
+
 	</aside>
+
+	<!--Used to push down stuff to put footer on bottom -->
+	<div class="push"></div>
+
+</div>
 
 	<!-- Footer -->
 
 	<footer>
+
 		<p>
 			&amp; Copyright 2016 Brandon Van Heyde
 		</p>
+
 	</footer>
 
 </body>
