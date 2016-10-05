@@ -8,6 +8,8 @@
 
 	<link rel="stylesheet" href="assets/css/style.css">
 
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
 </head>
 
 <body>
@@ -19,7 +21,8 @@
 		<ul id="navbar">
 
 			<li class="nav-items title-text title-background-color">Brandon Van Heyde</li>
-
+			
+			<!-- Series of links embedded in LI to form nav bar -->	
 			<li class="nav-items page-links click-link theme-text-color">
 				<a href="contact.html">Contact</a>
 			</li>
@@ -36,7 +39,7 @@
 
 	<!--About me page main body contents-->
 
-		<div class="container body" id="main-body">
+		<div class="container body">
 
 			<h2 class="theme-text-color">About Brandon</h2>
 
@@ -51,33 +54,27 @@
 
 	<!-- Aside with social media links to Brandon's social sites -->
 
-		<aside>
+		<div class="container connect-aside">
 
-			<div class="container" id="connect-aside">
+			<h2 class="theme-text-color">Connect with Me</h2>
 
-				<h2 class="theme-text-color">Connect with Me</h2>
+			<a href="https://github.com/branvh" target="_blank" class="social-links">
+				<img src="assets/images/githublogo.png" alt="github link icon" class="social-icons">
+			</a>
 
-				<a href="https://github.com/branvh" target="_blank" class="social-links">
+			<a href="https://www.linkedin.com/in/brandonvanheyde" target="_blank" class="social-links">
 
-					<img src="assets/images/githublogo.png" alt="github link icon" class="social-icons">
+				<img src="assets/images/linkedinlogo.png" alt="linked link icon" class="social-icons">
 
-				</a>
+			</a>
 
-				<a href="https://www.linkedin.com/in/brandonvanheyde" target="_blank" class="social-links">
+			<a href="http://stackoverflow.com/users/6789229/brandon-vh" target="_blank" class="social-links">
 
-					<img src="assets/images/linkedinlogo.png" alt="linked link icon" class="social-icons">
+				<img src="assets/images/stackoverflowlogo.png" alt="stack-overflow link icon" class="social-icons">
 
-				</a>
+			</a>
 
-				<a href="http://stackoverflow.com/users/6789229/brandon-vh" target="_blank" class="social-links">
-
-					<img src="assets/images/stackoverflowlogo.png" alt="stack-overflow link icon" class="social-icons">
-
-				</a>
-
-			</div>
-
-		</aside>
+		</div>
 
 		<!--Used to push down stuff to put footer on bottom -->
 		<div class="push"></div>
@@ -86,13 +83,13 @@
 
 	</div>
 
-		<div class="footer">
+	<footer class="footer">
 
-			<p id="footer-text">
-				&copy; 2016 Brandon Van Heyde
-			</p>
+		<p id="footer-text">
+			&copy; 2016 Brandon Van Heyde
+		</p>
 
-		</div>
+	</footer>
 
 </body>
 </html>

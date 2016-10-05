@@ -6,6 +6,8 @@
 
 	<link rel="stylesheet" href="assets/css/style.css">
 
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
 </head>
 
 <body>
@@ -13,10 +15,13 @@
 	<div class="wrapper">
 		<!-- Navbar and portfolio page links-->
 
+	<nav>
+
 		<ul id="navbar">
 
 			<li class="nav-items title-text title-background-color" id="your-name">Brandon Van Heyde</li>
 
+			<!-- Series of links embedded in LI to form nav bar -->
 			<li class="nav-items page-links click-link theme-text-color" id="link3">
 				<a href="contact.html">Contact</a>
 			</li>
@@ -31,77 +36,82 @@
 
 		</ul>
 
+	</nav>
+
 		<!--About me page main body contents-->
-			<div class="container body" id="contact-body">
+	<section>	
 
-				<h2 class="theme-text-color">Contact Brandon</h2>
-				
-				<!-- Form to submit contact details -->
+		<div class="container body" id="contact-body">
 
-				<form action="" id="contact-form">
-
-					<label for="name" class="contact-label">Name</label>
-
-					<input type="text" class="contact-input" placeholder="John or Jane Smith">
-
-
-					<label for="email" class="contact-label">Email</label>
-
-					<input type="email" class="contact-input" placeholder="example@email.com">
-
-
-					<label for="message" class="contact-label">Message</label>
-
-					<textarea name="message" id="message-input" class="contact-input" placeholder="300 characters or less, please!" maxlength="300" rows="10"></textarea>
-
-					<input type="submit" class="contact-input title-text title-background-color click-link">
-
-				</form>
+			<h2 class="theme-text-color">Contact Brandon</h2>
 			
-			</div>
+			<!-- Form to submit contact details -->
+
+			<form action="" id="contact-form">
+
+				<label for="name" class="contact-label">Name</label>
+
+				<input type="text" class="contact-input" placeholder="John or Jane Smith">
 
 
-			<!-- Aside with social media links to Brandon's social sites -->
+				<label for="email" class="contact-label">Email</label>
 
-			<aside>
+				<input type="email" class="contact-input" placeholder="example@email.com">
 
-				<div class="container" id="connect-aside">
 
-					<h2 class="theme-text-color">Connect with Me</h2>
+				<label for="message" class="contact-label">Message</label>
 
-					<a href="https://github.com/branvh" target="_blank" class="social-links">
-						<img src="assets/images/githublogo.png" alt="github link icon" class="social-icons">
-					</a>
+				<textarea name="message" id="message-input" class="contact-input" placeholder="300 characters or less, please!" maxlength="300" rows="10"></textarea>
 
-					<a href="https://www.linkedin.com/in/brandonvanheyde" target="_blank" class="social-links">
+				<input type="submit" class="contact-input title-text title-background-color click-link">
 
-						<img src="assets/images/linkedinlogo.png" alt="linked link icon" class="social-icons">
+			</form>
+		
+		</div>
 
-					</a>
+	</section>
 
-					<a href="http://stackoverflow.com/users/6789229/brandon-vh" target="_blank" class="social-links">
+		<!-- Aside with social media links to Brandon's social sites -->
 
-						<img src="assets/images/stackoverflowlogo.png" alt="stack-overflow link icon" class="social-icons">
+	<aside>
 
-					</a>
+		<div class="container connect-aside">
 
-				</div>
+			<h2 class="theme-text-color">Connect with Me</h2>
 
-			</aside>
+			<a href="https://github.com/branvh" target="_blank" class="social-links">
+				<img src="assets/images/githublogo.png" alt="github link icon" class="social-icons">
+			</a>
 
-			<div class="push"></div>
+			<a href="https://www.linkedin.com/in/brandonvanheyde" target="_blank" class="social-links">
+
+				<img src="assets/images/linkedinlogo.png" alt="linked link icon" class="social-icons">
+
+			</a>
+
+			<a href="http://stackoverflow.com/users/6789229/brandon-vh" target="_blank" class="social-links">
+
+				<img src="assets/images/stackoverflowlogo.png" alt="stack-overflow link icon" class="social-icons">
+
+			</a>
+
+		</div>
+	
+	</aside>
+
+		<!-- <div class="push"></div> -->
 
 	</div>
 		<!-- Footer -->
 
 
-	<div class="footer">
+	<footer class="footer">
 
 			<p id="footer-text">
 				&copy; 2016 Brandon Van Heyde
 			</p>
 
-	</div>
+	</footer>
 
 
 </body>

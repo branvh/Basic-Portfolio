@@ -6,9 +6,9 @@ html, body {
 
 body {
 	font-family: Arial, 'Helvetica Neue', sans-serif, serif;
-	background-image: url("assets/images/asanoha-400px.png");
 	background-repeat: repeat;
 	background-color: #dddddd;
+	background-image: url("../images/asanoha-400px.png");
 }
 
 
@@ -83,17 +83,19 @@ ul li:nth-of-type(2) {
 	color: rgb(0,43,92);
 }
 
+/* style body div - includes about me, portfolio, and contact form across those 3 pages */
 .container {
-	float: left;
 	padding: 10px;
 	background-color: white;
-	max-height: 50%;
 }
 
 .body {
+	float: left;
 	margin: 0px 20px 20px 90px;
 	width: 50%;
-	min-width: 33.33%;
+	min-width: 50%;
+	height: 50%;
+	max-height: 50%;
 }
 
 /* Body and aside heading format */
@@ -101,6 +103,7 @@ h2 {
 	margin: 0px 0px 10px 0px;
 	font-size: 24px;
 	border-bottom: 2px solid #dddddd;
+	text-align: left;
 }
 
 #brandon-profile-pic {
@@ -114,27 +117,28 @@ h2 {
 	line-height: 150%;
 }
 
-#connect-aside {
+.connect-aside {
 	float: left;
+	text-align: center;
 	width: 30%;
-	height: 30%;
-}
+	height: 150px;
+} 
 
 /* Format the social media link icons in aside */
 .social-links {
-	width: 25%;
-	height: 25%;
+ 	width: 25%;
+	height: 50%; 
 	display: block;
 	margin: 15px;
-	float: left;
+	float: left;  
 	text-align: center;
 }
 
 /* Format the social media link icons in aside */
 .social-icons {
-	width: 80%;
-	height: 80%;
-	display: block;
+	width: 100%;
+	height: 100%;
+	/* display: block; */
 }
 
 /* Next 3 deal with the sticky footer */
@@ -222,4 +226,15 @@ input[type="submit"] {
 	text-decoration: none;
 	position: relative;
 	display: block;
+}
+
+footer {
+	padding: 10px;
+    height: 50px;
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    top: auto;  /* added (IE FIX) */
 }
