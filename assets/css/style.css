@@ -1,3 +1,14 @@
+/* 
+STYLING IS ORDERED APPROXIMATELY AS FOLLOWS:
+	ITEMS SHARED ACROSS ALL PAGES - HEADER, FOOTER, BODY, ASIDE
+	ITEMS SPECIFIC TO PAGES 
+		INDEX
+		CONTACT
+		PORTFOLIO
+
+	BOTTOM SECTIONS ARE FOR RESPONSIVE DESIGN IN SMALLER WINDOWS
+ */
+
 html, body {
 	height: 100%;
 	margin: 0;
@@ -11,9 +22,28 @@ body {
 	background-image: url("../images/asanoha-400px.png");
 }
 
+/* MISC COLOR / BACKGROUND STYLING ACROSS PAGES */
 
+	/*  Next two items format text blocks within pages */
+.title-background-color {
+	background-color: rgb(0,43,92) ;
+}
+
+.title-text{
+	color: rgb(251,208,25);
+}
+
+	/* Format header and link font colors */
+.theme-text-color {
+	color: rgb(0,43,92) ;
+}
+
+
+/* NAVBAR STYLING */
+
+	/* Following items make a horizontal nav bar */
 #navbar {
-	width: 100%;
+	width: auto%;
 	border-bottom: 1px solid #cccccc;
 	height: 70px;
 	list-style: none;
@@ -23,27 +53,12 @@ body {
 	margin: 0px 0px 50px 0px;
 }
 
-
-/*  Next two items format text blocks within pages */
-.title-background-color {
-	background-color: rgb(0,43,92) ;
-}
-
-.title-text{
-	color: rgb(251,208,25);
-}
-
-/* Format header and link font colors */
-.theme-text-color {
-	color: rgb(0,43,92) ;
-}
-
-/* Create horizontal nav links */
+	/* Create horizontal nav links */
 .nav-items {
 	display: inline; 
 }
 
-/* Create site nav bar links and move right */
+	/* Create site nav bar links and move right */
 .page-links {
 	float: right;
 	width: 10%;
@@ -52,7 +67,7 @@ body {
 	height: 70px;
 }
 
-/* Style Brandon's name box */
+	/* Style Brandon's name box */
 ul li:nth-of-type(1) {
 	margin-left: 50px;
 	float: left;
@@ -61,13 +76,13 @@ ul li:nth-of-type(1) {
 	height: 30px;
 }
 
-/* Push links to left, style to remove right border */
+	/* Push links to left, style to remove right border */
 ul li:nth-of-type(2) {
     margin-right: 100px;
     border: none;
 }
 
-/* Format page link text contents */
+	/* Format page link text contents */
 .page-links a {
 	text-decoration: none;
 	text-align: center;
@@ -77,28 +92,27 @@ ul li:nth-of-type(2) {
 	padding: 25px 0px;
 }
 
-/* on hover, receive the title-text and background theme colors */
+	/* on hover, receive the title-text and background theme colors */
 .click-link:hover{
 	background-color: rgb(251,208,25);
 	color: rgb(0,43,92);
 }
 
-/* style body div - includes about me, portfolio, and contact form across those 3 pages */
-.container {
+/* BODY STYLING - ABOUT ME, PORTFOLIO, CONTACT FORM SHARED ITEMS*/
+
+	/* style body - includes about me, portfolio, and contact form across those 3 pages */
+
+.body {
+	float: left;
+	margin: 0px 0px 20px 90px;
+	width: 50%;
+	min-width: 450px;
+	height: 50%;
 	padding: 10px;
 	background-color: white;
 }
 
-.body {
-	float: left;
-	margin: 0px 20px 20px 90px;
-	width: 50%;
-	min-width: 50%;
-	height: 50%;
-	max-height: 50%;
-}
-
-/* Body and aside heading format */
+	/* Body and aside heading format in body and aside */
 h2 {
 	margin: 0px 0px 10px 0px;
 	font-size: 24px;
@@ -106,58 +120,83 @@ h2 {
 	text-align: left;
 }
 
-#brandon-profile-pic {
-	margin: 0px 10px 10px 0px;
-	float: left;
-	height: 100px;
-	width: 100px;
-}
+/* ASIDE STYLING */
 
-.about-me-text {
-	line-height: 150%;
-}
-
+	/* aside styling */
 .connect-aside {
 	float: left;
 	text-align: center;
-	width: 30%;
-	height: 150px;
+	width: 250px;
+	height: auto;
+	margin-left: 5%;
+	/* margin-right: 108px; */
+	padding: 10px;
+	background-color: white;
 } 
 
-/* Format the social media link icons in aside */
+	/* Format the social media link icons in aside */
 .social-links {
- 	width: 25%;
-	height: 50%; 
+ 	width: 50px;
+	height: 50px; 
 	display: block;
 	margin: 15px;
 	float: left;  
 	text-align: center;
 }
 
-/* Format the social media link icons in aside */
+	/* Format embeded images to serve as clickable link area */
 .social-icons {
 	width: 100%;
 	height: 100%;
-	/* display: block; */
 }
 
-/* Next 3 deal with the sticky footer */
+/* FOOTER STYLING */
+
+	/* Sticky footer formatted over next 4 items */
+.push, .footer {
+	height: 25px;
+	clear: both;
+}
+
+	/* Used primarily for sticky footer */
 .wrapper {
+	position: relative;
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -2em;
-}
-
-.footer, .push {
-	height: 2em;
+	margin-bottom: -26px;
 }
 
 .footer {
+	border-top: 1px solid rgb(251,208,25);
 	text-align: center;
 }
 
-/* styling for contact page specific items */
+#footer-text {
+	margin: 0;
+	height: 100%;
+}
+
+/* INDEX SPECIFIC ITEMS FORMATTING*/
+
+#brandon-profile-pic {
+	margin: 10px 10px 10px 0px;
+	float: left;
+	height: 120px;
+	width: 120px;
+}
+
+.about-me-text {
+	line-height: 150%;
+}
+
+#go-blue {
+	font-size: 150%;
+	color: rgb(0,43,92);
+}
+
+
+/* CONTACT PAGE SPECIFIC ITEMS */
 
 .contact-label {
 	text-align: left;
@@ -179,47 +218,22 @@ h2 {
 }
 
 
-/* Submit button formatting */
+	/* Submit button formatting */
 input[type="submit"] {
 	width: 20%;
 	height: 30px;
 	margin-bottom: 0;
 }
 
-/* Styliing for portfolio page specific "panel" items */
+/* PORTFOLIO SPECIFIC ITEMS */
 
 .panel {
-	margin: 0px 0px 10px 0px;
-	padding: 0;
-	width: 47.5%;
-	height: 25%;
-}
-
-.panel-even {
-	float: right;
-}
-
-.panel-odd {
+	margin: 0px 50px 20px 50px;
 	float: left;
+	padding: 0;
 }
 
-.portfolio-image {
-	max-width: 100%;
-	max-height: 100%
-	width: 200px;
-	height: 200px;
-	text-align: center;
-}
-
-.panel-text {
-	text-align: center;
-	width: 100%;
-	margin: 0;
-	position: absolute;
-	padding: 5px 0px;
-	bottom: 30px;
-}
-
+	/* Images are clickable links contained in these anchors */
 .panel-link {
 	width: 100%;
 	height: 100%;
@@ -228,13 +242,19 @@ input[type="submit"] {
 	display: block;
 }
 
-footer {
-	padding: 10px;
-    height: 50px;
-    position:absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: -1;
-    top: auto;  /* added (IE FIX) */
+	/* Clickable links...both picture and text are clickable by design */
+.portfolio-image {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+}
+
+	/* Text box to overlay links */
+.panel-text {
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	padding: 5px 0px;
+	bottom: 30px;
 }

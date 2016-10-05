@@ -15,67 +15,65 @@
 	<div class="wrapper">
 		<!-- Navbar and portfolio page links-->
 
-	<nav>
+		<nav>
 
-		<ul id="navbar">
+			<ul id="navbar">
 
-			<li class="nav-items title-text title-background-color" id="your-name">Brandon Van Heyde</li>
+				<li class="nav-items title-text title-background-color" id="your-name">Brandon Van Heyde</li>
 
-			<!-- Series of links embedded in LI to form nav bar -->
-			<li class="nav-items page-links click-link theme-text-color" id="link3">
-				<a href="contact.html">Contact</a>
-			</li>
+				<!-- Series of links embedded in LI to form nav bar -->
+				<li class="nav-items page-links click-link theme-text-color" id="link3">
+					<a href="contact.html">Contact</a>
+				</li>
 
-			<li class="nav-items page-links click-link theme-text-color" id="link2">
-				<a href="portfolio.html">Portfolio</a>
-			</li>
+				<li class="nav-items page-links click-link theme-text-color" id="link2">
+					<a href="portfolio.html">Portfolio</a>
+				</li>
 
-			<li class="nav-items page-links click-link theme-text-color" id="link1">
-				<a href="index.html">About</a>
-			</li>
+				<li class="nav-items page-links click-link theme-text-color" id="link1">
+					<a href="index.html">About</a>
+				</li>
 
-		</ul>
+			</ul>
 
-	</nav>
+		</nav>
 
-		<!--About me page main body contents-->
-	<section>	
+			<!--About me page main body contents-->
+		<section>	
 
-		<div class="container body" id="contact-body">
+			<div class="container body" id="contact-body">
 
-			<h2 class="theme-text-color">Contact Brandon</h2>
+				<h2 class="theme-text-color">Contact Brandon</h2>
+				
+				<!-- Form to submit contact details -->
+
+				<form action="" id="contact-form">
+
+					<label for="name" class="contact-label">Name</label>
+
+					<input type="text" class="contact-input" placeholder="John or Jane Smith">
+
+
+					<label for="email" class="contact-label">Email</label>
+
+					<input type="email" class="contact-input" placeholder="example@email.com">
+
+
+					<label for="message" class="contact-label">Message</label>
+
+					<textarea name="message" id="message-input" class="contact-input" placeholder="300 characters or less, please!" maxlength="300" rows="10"></textarea>
+
+					<input type="submit" class="contact-input title-text title-background-color click-link">
+
+				</form>
 			
-			<!-- Form to submit contact details -->
+			</div>
 
-			<form action="" id="contact-form">
+		</section>
 
-				<label for="name" class="contact-label">Name</label>
+			<!-- Aside with social media links to Brandon's social sites -->
 
-				<input type="text" class="contact-input" placeholder="John or Jane Smith">
-
-
-				<label for="email" class="contact-label">Email</label>
-
-				<input type="email" class="contact-input" placeholder="example@email.com">
-
-
-				<label for="message" class="contact-label">Message</label>
-
-				<textarea name="message" id="message-input" class="contact-input" placeholder="300 characters or less, please!" maxlength="300" rows="10"></textarea>
-
-				<input type="submit" class="contact-input title-text title-background-color click-link">
-
-			</form>
-		
-		</div>
-
-	</section>
-
-		<!-- Aside with social media links to Brandon's social sites -->
-
-	<aside>
-
-		<div class="container connect-aside">
+		<aside class="connect-aside">
 
 			<h2 class="theme-text-color">Connect with Me</h2>
 
@@ -95,24 +93,22 @@
 
 			</a>
 
-		</div>
-	
-	</aside>
+		</aside>
 
-		<!-- <div class="push"></div> -->
+			<!--Used to push down stuff to put footer on bottom -->
+		<div class="push"></div>
 
 	</div>
-		<!-- Footer -->
 
+	<!-- Footer -->
 
-	<footer class="footer">
+	<footer class="footer title-text title-background-color">
 
-			<p id="footer-text">
-				&copy; 2016 Brandon Van Heyde
-			</p>
+		<p id="footer-text">
+			&copy; 2016 Brandon Van Heyde
+		</p>
 
 	</footer>
-
 
 </body>
 </html>
