@@ -43,7 +43,7 @@ body {
 
 	/* Following items make a horizontal nav bar */
 #navbar {
-	width: auto%;
+	width: auto;
 	border-bottom: 1px solid #cccccc;
 	height: 70px;
 	list-style: none;
@@ -51,6 +51,7 @@ body {
 	background-color: white;
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	margin: 0px 0px 50px 0px;
+	padding-left: 40;
 }
 
 	/* Create horizontal nav links */
@@ -102,7 +103,7 @@ ul li:nth-of-type(2) {
 
 	/* style body - includes about me, portfolio, and contact form across those 3 pages */
 
-.body {
+.main-content {
 	float: left;
 	margin: 0px 0px 20px 90px;
 	width: 50%;
@@ -129,7 +130,6 @@ h2 {
 	width: 250px;
 	height: auto;
 	margin-left: 5%;
-	/* margin-right: 108px; */
 	padding: 10px;
 	background-color: white;
 } 
